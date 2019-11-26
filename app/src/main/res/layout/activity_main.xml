@@ -34,7 +34,7 @@
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="25dp"
         android:layout_margin="10dp"
         android:id="@+id/spinRoom"/>
 
@@ -111,10 +111,19 @@
         android:textSize="25sp"
         />
 
+    <Button
+        android:id="@+id/btnDiff"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Difference in days"
+        android:textSize="25sp"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Total:"
+        android:text="Total"
         android:layout_margin="10dp"
         android:textSize="30sp"
         android:id="@+id/tvTotal"
