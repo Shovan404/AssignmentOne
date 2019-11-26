@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                     return;
                 }
                 if (etAdult.getText().toString().equals("0")) {
-                    etAdult.setError("Adult cannot be 0");
+                    etAdult.setError("Specify number of adults");
                     return;
                 }
                 if (etRoom.getText().toString().equals("0")) {
-                    etRoom.setError("Room cannot be 0");
+                    etRoom.setError("Specify Rooms needed");
                     return;
                 }
                 if (dateChecking.before(dateCheckout)) {
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         } else if (spinRoom.getSelectedItem().toString().equals("Presidential")) {
             roomcost = 5000;
         } else if (spinRoom.getSelectedItem().toString().equals("Premium")) {
-            roomcost = 4000;
+            roomcost = 7000;
         }
         int noofroom = Integer.parseInt(etRoom.getText().toString());
         total = roomcost * noofroom * noofday;
