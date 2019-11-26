@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
                 loadCheckoutDate();
             }
         });
-        //Button
         btnCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
