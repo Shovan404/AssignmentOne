@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check in date"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:id="@+id/tvCheckin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check out date"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:id="@+id/tvCheckout"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Room Type"
+        android:layout_margin="10dp"
+        android:textSize="30sp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:id="@+id/spinRoom"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        tools:context=".GridActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:text="Adult"
+        android:textSize="25dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textSize="30sp"
+            />
+
+    <EditText
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:id="@+id/etAdult"
+        android:textSize="24sp"
+        android:hint="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:id="@+id/etChild"
+        android:textSize="24sp"
+        android:hint="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:id="@+id/etRoom"
+        android:textSize="24sp"
+        android:hint="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnCal"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calculate"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total:"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:id="@+id/tvTotal"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vat(13%):"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:id="@+id/tvVat"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gross Total:"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:id="@+id/tvGross"
+        />
+
+
+
+
+
+
+</LinearLayout>
