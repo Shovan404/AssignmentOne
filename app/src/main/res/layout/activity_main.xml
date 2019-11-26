@@ -14,6 +14,9 @@
         android:text="Check in date"
         android:layout_margin="10dp"
         android:textSize="30sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:gravity="center"
         android:id="@+id/tvCheckin"/>
 
     <TextView
@@ -22,6 +25,9 @@
         android:text="Check out date"
         android:layout_margin="10dp"
         android:textSize="30sp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:gravity="center"
         android:id="@+id/tvCheckout"
         />
 
@@ -31,11 +37,14 @@
         android:id="@+id/tvPrice"
         android:text="Select Room Type"
         android:layout_margin="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
+        android:gravity="center"
         android:textSize="30sp"/>
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:textSize="30sp"
         android:layout_margin="10dp"
         android:id="@+id/spinRoom"/>
 
@@ -52,7 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:background="@android:color/holo_blue_dark"
+        android:textColor="@android:color/white"
         android:text="Adult"
+        android:gravity="center"
         android:textSize="25dp"
         />
 
@@ -60,6 +72,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Child"
+            android:gravity="center"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:textSize="30sp"
@@ -70,7 +85,10 @@
             android:layout_columnWeight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"
             android:text="Room"
+            android:gravity="center"
             android:textSize="30sp"
             />
 
@@ -79,6 +97,7 @@
         android:layout_columnWeight="1"
         android:id="@+id/etAdult"
         android:textSize="24sp"
+        android:gravity="center"
         android:hint="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -87,6 +106,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:id="@+id/etChild"
+        android:gravity="center"
         android:textSize="24sp"
         android:hint="0"
         android:layout_width="wrap_content"
@@ -97,6 +117,7 @@
         android:layout_columnWeight="1"
         android:id="@+id/etRoom"
         android:textSize="24sp"
+        android:gravity="center"
         android:hint="0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -108,18 +129,12 @@
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@android:color/holo_green_light"
         android:hint="Calculate"
-        android:textSize="25sp"
+        android:textSize="44sp"
         />
 
-    <Button
-        android:id="@+id/btnDiff"
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Difference in days"
-        android:textSize="25sp"
-        />
 
     <TextView
         android:layout_width="match_parent"
